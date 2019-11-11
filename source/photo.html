@@ -14,10 +14,10 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper"></div>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a>Фото и видео</a>
             </li>
             <li class="site-list__item">
@@ -33,7 +33,53 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Фото и видео галлерея</h1>
-
+      <section class="short-welcome">
+        <img class="short-welcome__short-text-image" src="https://via.placeholder.com/39x229" width="229" height="39" alt="Седона">
+      </section>
+      <section class="welcome-text">
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
+        <p class="welcome-text__about">Фото и видео</p>
+        <p class="welcome-text__reasons">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </section>
+      <section class="photos">
+        <ul class="photos__list gallary">
+          <li class="gallary__photo">
+            <img class="gallary__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Неродные просторы">
+            <p class="gallary__title">Неродные просторы</p>
+            <p class="gallary__author">Автор фото: Борис</p>
+            <p class="gallary__likes">1350</p>
+          </li>
+          <li class="gallary__photo">
+            <img class="gallary__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Местная растительность">
+            <p class="gallary__title">Местная растительность</p>
+            <p class="gallary__author">Автор фото: Сергей</p>
+            <p class="gallary__likes">143</p>
+          </li>
+          <li class="gallary__photo">
+            <img class="gallary__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Дорога на север">
+            <p class="gallary__title">Дорога на север</p>
+            <p class="gallary__author">Автор фото: Петр</p>
+            <p class="gallary__likes">96</p>
+          </li>
+          <li class="gallary__photo">
+            <img class="gallary__image" src="https://via.placeholder.com/280x280" width="280" height="280" alt="Мост дьявола">
+            <p class="gallary__title">Мост дьявола</p>
+            <p class="gallary__author">Автор фото: Антон</p>
+            <p class="gallary__likes">254</p>
+          </li>
+        </ul>
+      </section>
+      <section class="welcome-text">
+        <h2 class="visually-hidden">Сомнения в сторону</h2>
+        <p class="welcome-text__about">Все еще сомневаетесь?</p>
+        <p class="welcome-text__reasons">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      </section>
+      <section class="video-player">
+        <video class="video-player__movie" width="320" height="210" poster="https://via.placeholder.com/320x210">
+          <source src="#" type='video/webm; codecs="vp8, vorbis"'>
+        </video>
+        <div class="video-player__controls"></div>
+      </section>
     </main>
 
     <footer class="page-footer">
