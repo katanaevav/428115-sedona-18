@@ -12,7 +12,6 @@
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
               <a href="index.html">Главная</a>
@@ -27,7 +26,6 @@
               <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
     </header>
 
@@ -42,8 +40,8 @@
         <p class="welcome-text__reasons">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
       </section>
       <form class="review" action="https://echo.htmlacademy.ru" method="POST">
-        <fieldset class="introduce">
-          <legend class="introduce__legend">Представьтесь:</legend>
+        <div class="introduce">
+          <p class="introduce__caption">Представьтесь:</p>
           <p class="introduce__text-input">
             <label class="introduce__label" for="introduce-text__name">Имя*:</label>
             <input class="introduce__input" id="introduce-text__name" type="text" name="name" placeholder="Петр" required>
@@ -56,9 +54,9 @@
             <label class="introduce__label" for="introduce-text__patronymic-name">Отчество:</label>
             <input class="introduce__input" id="introduce-text__patronymic-name" type="text" name="patronymic-name" placeholder="Александрович">
           </p>
-        </fieldset>
-        <fieldset class="contacts">
-          <legend class="contacts__legend">Контактная информация:</legend>
+        </div>
+        <div class="contacts">
+          <p class="introduce__caption">Контактная информация:</p>
           <p class="contacts__text-input">
             <label class="contacts__label" for="contacts-text__phone">Контактный телефон*:</label>
             <input class="contacts__input" id="contacts-text__phone" type="tel" name="phone" placeholder="Введите телефон" required>
@@ -67,9 +65,9 @@
             <label class="contacts__label" for="contacts-text__email">Электронная почта*:</label>
             <input class="contacts__input" id="contacts-text__email" type="email" name="email" placeholder="Введите e-mail" required>
           </p>
-        </fieldset>
-        <fieldset class="impression">
-          <legend class="impression__legend">Ваше общее впечатление:</legend>
+        </div>
+        <div class="impression">
+          <p class="introduce__caption">Ваше общее впечатление:</p>
           <p>
             <input class="impression__radio" type="radio" name="impression-group" id="impression__positive" value="positive" checked>
             <label class="impression__label" for="impression__positive">Скорее положительное</label>
@@ -82,9 +80,9 @@
             <input class="impression__radio" type="radio" name="impression-group" id="impression__difficult" value="difficult">
             <label class="impression__label" for="impression__difficult">Затрудняюсь ответить</label>
           </p>
-        </fieldset>
-        <fieldset class="attractions">
-          <legend class="attractions__legend">Посещенные достопримечательности:</legend>
+        </div>
+        <div class="attractions">
+          <p class="introduce__caption">Посещенные достопримечательности:</p>
             <p>
               <input class="attractions__checkbox" type="checkbox" name="attractions-devil-bridge" id="attractions__devil-bridge" value="devil-bridge" checked>
               <label class="attractions__label" for="attractions__devil-bridge">Мост дьявола</label>
@@ -101,13 +99,13 @@
               <input class="attractions__checkbox" type="checkbox" name="attractions-red-rocks" id="attractions__red-rocks" value="red-rocks">
               <label class="attractions__label" for="attractions__red-rocks">Красные скалы</label>
             </p>
-        </fieldset>
-        <fieldset class="emotions">
-          <legend class="emotions__legend">Опишите свои эмоции:</legend>
+          </div>
+        <div class="emotions">
+          <p class="introduce__caption">Опишите свои эмоции:</p>
           <p>
             <textarea name="emotions__description">Опишите подробно все свои восторги</textarea>
           </p>
-        </fieldset>
+        </div>
         <button class="review__submit" type="submit">Отправить отзыв</button>
       </form>
       <section class="sending-fail">
