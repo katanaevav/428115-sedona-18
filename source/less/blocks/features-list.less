@@ -16,3 +16,29 @@
 .features-list__description {
   color: @grey;
 }
+
+.features-list__item {
+  padding: 10px;
+
+  border: 2px solid @black;
+  margin: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    padding: 30px;
+    text-align: center;
+
+    border: 2px solid @black;
+    margin: 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*desktop*/
+}

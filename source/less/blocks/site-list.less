@@ -76,34 +76,7 @@
 
 @media (min-width: @desktop-width) {
   .site-list {
-    flex-direction: row;
-
-    margin-left: 0;
-    margin-right: 0;
     padding: 0 6%;
-  }
-
-  .site-list a {
-    color: @black;
-  }
-
-  .site-list__item {
-    font-size: 14px;
-    line-height: 26px;
-    background-color: @white;
-    width: 20%;
-
-    border: 2px solid black;
-    // margin: 2px;
-    // padding: 2px;
-  }
-
-  .site-list__item--left {
-    text-align: left;
-  }
-
-  .site-list__item--right {
-    text-align: right;
   }
 
   .site-list__item--left + .site-list__item--left {
@@ -112,9 +85,5 @@
 
   .site-list__item--right + .site-list__item--right {
     margin-left: 30px;
-  }
-
-  .site-list__item--left + .site-list__item--right {
-    margin-left: auto;
   }
 }

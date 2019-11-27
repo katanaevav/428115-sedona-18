@@ -6,6 +6,16 @@
   text-align: center;
 }
 
+.rewiew-wrapper {
+  text-align: left;
+}
+
+.review__button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
 .review__submit {
   font: inherit;
   font-size: 21px;
@@ -21,8 +31,10 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+  }
 
-    text-align: left;
+  .rewiew-wrapper div {
+    flex-grow: 1;
   }
 
   .rewiew-wrapper div:nth-child(1) {
@@ -44,6 +56,20 @@
 
   .rewiew-wrapper div:nth-child(5) {
     width: 100%;
+  }
+
+  .review__button-wrapper {
+    justify-content: space-between;
+  }
+
+  .review__button-wrapper::after {
+    margin-top: 5px;
+    content: "* - обязательные поля";
+    background-color: @white;
+    border: none;
+    color: @grey;
+    font-size: 14px;
+    line-height: 26px;
   }
 }
 

@@ -13,9 +13,33 @@
 .reasons-list__item {
   background-color: @light-grey;
   color: @black;
+
+  padding: 10px;
+
+  border: 2px solid black;
+  margin: 2px;
 }
 
 .reasons-list__description,
 .reasons-list__number {
   color: @grey;
+}
+
+@media (min-width: @tablet-width) {
+  .reasons-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reasons-list__item {
+    padding: 30px;
+    text-align: center;
+
+    border: 2px solid @black;
+    margin: 2px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*desktop*/
 }
