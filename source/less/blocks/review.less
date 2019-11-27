@@ -2,6 +2,8 @@
   border: 2px solid @red;
   margin: 2px;
   padding: 2px;
+
+  text-align: center;
 }
 
 .review__submit {
@@ -12,4 +14,39 @@
   color: @white;
   background-color: @light-blue;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .rewiew-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    text-align: left;
+  }
+
+  .rewiew-wrapper div:nth-child(1) {
+    width: 48%;
+  }
+
+  .rewiew-wrapper div:nth-child(2) {
+    width: 100%;
+  }
+
+  .rewiew-wrapper div:nth-child(3) {
+    order: -1;
+    width: 48%;
+  }
+
+  .rewiew-wrapper div:nth-child(4) {
+    width: 100%;
+  }
+
+  .rewiew-wrapper div:nth-child(5) {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /* desktop*/
 }

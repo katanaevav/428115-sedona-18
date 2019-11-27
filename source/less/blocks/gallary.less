@@ -22,3 +22,44 @@
 .gallary__likes {
   font-weight: bold;
 }
+
+.gallary__item {
+  border: 2px solid @black;
+}
+
+@media (min-width: @tablet-width) {
+  .gallary {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .gallary__item:nth-child(1) {
+    width: 100%;
+  }
+
+  .gallary__item:nth-child(2) {
+    width: 48%;
+  }
+
+  .gallary__item:nth-child(3) {
+    width: 48%;
+  }
+
+  .gallary__item:nth-child(4) {
+    width: 48%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gallary__item:nth-child(2) {
+    width: 32%;
+  }
+
+  .gallary__item:nth-child(3) {
+    width: 32%;
+  }
+
+  .gallary__item:nth-child(4) {
+    width: 32%;
+  }
+}
