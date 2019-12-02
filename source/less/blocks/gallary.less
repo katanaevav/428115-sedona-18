@@ -34,21 +34,28 @@
     flex-wrap: wrap;
   }
 
-  .gallary__item:nth-child(1) {
-    width: 100%;
+  // .gallary__item:nth-child(2),
+  // .gallary__item:nth-child(3),
+  // .gallary__item:nth-child(4) {
+  .gallary__item {
+    width: 49.4%;
   }
 
-  .gallary__item:nth-child(2),
-  .gallary__item:nth-child(3),
-  .gallary__item:nth-child(4) {
-    width: 49.4%;
+  //.gallary__item:nth-child(1) {
+  .gallary__item--large {
+    width: 100%;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .gallary__item:nth-child(2),
-  .gallary__item:nth-child(3),
-  .gallary__item:nth-child(4) {
+  // .gallary__item:nth-child(2),
+  // .gallary__item:nth-child(3),
+  // .gallary__item:nth-child(4) {
+  .gallary__item {
     width: 32.9%;
+  }
+
+  .gallary__item--large {
+    width: 100%;
   }
 }
