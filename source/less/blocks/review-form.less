@@ -1,22 +1,22 @@
-.review {
+.review-form {
   border: 2px solid @red;
   margin: 2px;
   padding: 2px;
 
-  text-align: center;
+  // text-align: center;
 }
 
-.rewiew-wrapper {
-  text-align: left;
-}
+// .rewiew-wrapper {
+//   text-align: left;
+// }
 
-.review__button-wrapper {
+.review-form__button-wrapper {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
 
-.review__submit {
+.review-form__submit {
   font: inherit;
   font-size: 21px;
   line-height: 26px;
@@ -26,43 +26,60 @@
   text-transform: uppercase;
 }
 
+.review-form__title {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.review-form__elements {
+  margin: 0;
+  padding: 0;
+}
+
 @media (min-width: @tablet-width) {
-  .rewiew-wrapper {
+  // .rewiew-wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  // }
+
+  .review-form {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
 
-  .rewiew-wrapper div {
+  .review-form div {
     flex-grow: 1;
   }
 
-  .rewiew-wrapper div:nth-child(1) {
+  .review-form div:nth-child(1) {
     width: 48%;
   }
 
-  .rewiew-wrapper div:nth-child(2) {
+  .review-form div:nth-child(2) {
     width: 100%;
   }
 
-  .rewiew-wrapper div:nth-child(3) {
+  .review-form div:nth-child(3) {
     order: -1;
     width: 48%;
   }
 
-  .rewiew-wrapper div:nth-child(4) {
+  .review-form div:nth-child(4) {
     width: 100%;
   }
 
-  .rewiew-wrapper div:nth-child(5) {
+  .review-form div:nth-child(5) {
     width: 100%;
   }
 
-  .review__button-wrapper {
+  .review-form__button-wrapper {
     justify-content: space-between;
   }
 
-  .review__button-wrapper::after {
+  .review-form__button-wrapper::after {
     margin-top: 5px;
     content: "* - обязательные поля";
     background-color: @white;
