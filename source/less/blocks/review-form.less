@@ -1,0 +1,95 @@
+.review-form {
+  border: 2px solid @red;
+  margin: 2px;
+  padding: 2px;
+
+  // text-align: center;
+}
+
+// .rewiew-wrapper {
+//   text-align: left;
+// }
+
+.review-form__button-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.review-form__submit {
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  color: @white;
+  background-color: @light-blue;
+  text-transform: uppercase;
+}
+
+.review-form__title {
+  font-size: 18px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.review-form__elements {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  // .rewiew-wrapper {
+  //   display: flex;
+  //   flex-direction: row;
+  //   flex-wrap: wrap;
+  // }
+
+  .review-form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .review-form div {
+    flex-grow: 1;
+  }
+
+  .review-form div:nth-child(1) {
+    width: 48%;
+  }
+
+  .review-form div:nth-child(2) {
+    width: 100%;
+  }
+
+  .review-form div:nth-child(3) {
+    order: -1;
+    width: 48%;
+  }
+
+  .review-form div:nth-child(4) {
+    width: 100%;
+  }
+
+  .review-form div:nth-child(5) {
+    width: 100%;
+  }
+
+  .review-form__button-wrapper {
+    justify-content: space-between;
+  }
+
+  .review-form__button-wrapper::after {
+    margin-top: 5px;
+    content: "* - обязательные поля";
+    background-color: @white;
+    border: none;
+    color: @grey;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /* desktop*/
+}

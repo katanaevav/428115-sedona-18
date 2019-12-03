@@ -1,7 +1,7 @@
 .page-footer {
   border: 2px solid @red;
   margin: 2px;
-  padding: 2px;
+  padding: 20px;
 
   text-align: center;
 }
@@ -14,4 +14,31 @@
 
 .page-footer__develop-link {
   line-height: 26px;
+  color: @black;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  border: 2px solid @black;
+  margin: 2px;
+  padding: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .page-footer__develop-link {
+    padding-top: 17px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*desktop*/
 }
