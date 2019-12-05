@@ -18,9 +18,33 @@
   line-height: 40px;
   background-color: @light-blue;
 
-  border: 2px solid black;
+  // border: 2px solid black;
 
   width: 100%;
+}
+
+@media @mobile-width-only {
+  .site-list__item {
+    a {
+      padding-top: 7px;
+      padding-bottom: 7px;
+
+      box-sizing: border-box;
+      display: block;
+
+      border-top: 1px solid #9ac2db;
+      border-bottom: 1px solid #678fa8;
+    }
+
+    &:first-child a {
+      border-top: 1px solid @light-blue;
+    }
+
+    &:last-child a {
+      border-bottom: none;
+      box-shadow: 0px -3px 3px 0 rgba(0, 1, 1, 0.2) inset;
+    }
+  }
 }
 
 @media (min-width: @tablet-width) {
