@@ -17,25 +17,31 @@
 .page-header__logo {
   position: absolute;
   // top: 0;
-  bottom: -36px;
+  bottom: -32px;
   // left: 50%;
   left: 0;
   right: 0;
   // margin-left: -51px;
   margin: auto;
   width: 102px;
+
+  z-index: 1;
 }
 
 .page-header__open-nav {
   position: absolute;
   // top: 17px;
-  bottom: 10px;
+  bottom: 14px;
   right: 14px;
   // margin-left: -51px;
 
   border: none;
   color: @light-blue;
   background-color: @white;
+
+  fill: @light-blue;
+
+  cursor: pointer;
 }
 
 @media (min-width: @tablet-width) {
