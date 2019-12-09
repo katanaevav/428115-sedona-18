@@ -1,27 +1,74 @@
 .features-list {
-  border: 2px solid @green;
-  margin: 2px;
-  padding: 2px;
+  // border: 2px solid @green;
+  // margin: 2px;
+  // padding: 2px;
 
   text-align: left;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 35px;
 }
 
+.features-list__item {
+  // border: 1px solid @black;
+  // margin: 2px;
+}
 .features-list__header {
+  margin: 0;
+  padding-left: 69px;
+  padding-top: 28px;
   color: @black;
   font-weight: bold;
   font-size: 18px;
   line-height: 26px;
 }
 
-.features-list__description {
-  color: @grey;
+.features-list__header--house,
+.features-list__header--present,
+.features-list__header--burger {
+  position: relative;
 }
 
-.features-list__item {
-  padding: 10px;
+.features-list__header--house::before {
+  position: absolute;
+  top: 18px;
+  left: 22px;
+  content: "";
+  background-image: url("../../img/icon-house.svg");
+  background-size: 37px 39px;
+  height: 39px;
+  width: 37px;
+}
 
-  border: 2px solid @black;
-  margin: 2px;
+.features-list__header--present::before {
+  position: absolute;
+  top: 17px;
+  left: 24px;
+  content: "";
+  background-image: url("../../img/icon-gift.svg");
+  background-size: 32px 38px;
+  height: 38px;
+  width: 32px;
+}
+
+.features-list__header--burger::before {
+  position: absolute;
+  top: 19px;
+  left: 20px;
+  content: "";
+  background-image: url("../../img/icon-burger.svg");
+  background-size: 37px 42px;
+  height: 42px;
+  width: 37px;
+}
+
+.features-list__description {
+  color: @grey;
+  margin: 0;
+  padding-top: 14px;
+  padding-left: 69px;
+  padding-right: 20px;
+  padding-bottom: 1px;
 }
 
 @media (min-width: @tablet-width) {
@@ -34,8 +81,8 @@
     padding: 30px;
     text-align: center;
 
-    border: 2px solid @black;
-    margin: 2px;
+    // border: 2px solid @black;
+    // margin: 2px;
   }
 }
 
