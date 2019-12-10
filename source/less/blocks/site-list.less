@@ -42,7 +42,7 @@
 
       &:active {
         background-color: #5496bd;
-        opacity: 0.3;
+        color: rgba(255, 255, 255, 0.3);
       }
     }
 
@@ -84,13 +84,35 @@
     flex-wrap: wrap;
     justify-content: flex-start;
 
-    margin-left: 0;
+    margin-left: 25px;
     margin-right: 0;
-    padding: 0 4%;
+    padding: 0 3%;
   }
 
   .site-list a {
     color: @black;
+
+    &:hover,
+    &:focus {
+      color: #81b3d2;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  .site-list__item--active a {
+    color: #766357;
+
+    &:hover,
+    &:focus {
+      color: #604e43;
+    }
+
+    &:active {
+      color: rgba(118, 99, 87, 0.3);
+    }
   }
 
   .site-list__item {
@@ -98,11 +120,11 @@
     line-height: 26px;
     background-color: @white;
     width: 20%;
-    // border: none;
-    margin-top: 12px;
-    margin-bottom: 12px;
 
-    border: 2px solid black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    // border: 1px solid black;
     // margin: 2px;
     // padding: 2px;
   }
@@ -116,11 +138,12 @@
   }
 
   .site-list__item--left + .site-list__item--left {
-    margin-left: 10px;
+    margin-left: -5px;
   }
 
   .site-list__item--right + .site-list__item--right {
-    margin-left: 10px;
+    margin-left: 9px;
+    margin-right: 3px;
   }
 
   .site-list__item--left + .site-list__item--right {
