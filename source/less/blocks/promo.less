@@ -3,6 +3,9 @@
   margin: 2px;
   padding: 2px;*/
 
+  padding-left: 20px;
+  padding-right: 20px;
+
   position: relative;
 
   background-image: url("../../img/bg-back-mobile@1x.jpg");
@@ -14,6 +17,8 @@
 .promo__text-image {
   padding-top: 90px;
   padding-bottom: 80px;
+  max-width: 100%;
+  height: auto;
 }
 
 // @media @mobile-width-only {
@@ -33,6 +38,11 @@
 @media (min-width: @tablet-width) {
   .promo {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
+  }
+
+  .promo__text-image {
+    padding-top: 77px;
+    padding-bottom: 85px;
   }
 }
 

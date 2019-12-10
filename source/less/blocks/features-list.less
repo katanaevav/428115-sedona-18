@@ -32,13 +32,22 @@
 
 .features-list__header--house::before {
   position: absolute;
-  top: 18px;
-  left: 22px;
+
   content: "";
   background-image: url("../../img/icon-house.svg");
+  top: 18px;
+  left: 22px;
   background-size: 37px 39px;
   height: 39px;
   width: 37px;
+
+  @media (min-width: @tablet-width) {
+    top: 27px;
+    left: 60px;
+    background-size: 75px 78px;
+    height: 78px;
+    width: 75px;
+  }
 }
 
 .features-list__header--present::before {
@@ -50,6 +59,14 @@
   background-size: 32px 38px;
   height: 38px;
   width: 32px;
+
+  @media (min-width: @tablet-width) {
+    top: 28px;
+    left: 62px;
+    background-size: 73px 75px;
+    height: 75px;
+    width: 73px;
+  }
 }
 
 .features-list__header--burger::before {
@@ -61,6 +78,14 @@
   background-size: 37px 42px;
   height: 42px;
   width: 37px;
+
+  @media (min-width: @tablet-width) {
+    top: 30px;
+    left: 60px;
+    background-size: 76px 75px;
+    height: 75px;
+    width: 76px;
+  }
 }
 
 .features-list__description {
@@ -82,8 +107,37 @@
     padding: 30px;
     text-align: center;
 
+    width: 33.3%;
+    box-sizing: border-box;
+
     // border: 2px solid @black;
     // margin: 2px;
+
+    &:nth-child(1) {
+      order: -1;
+    }
+
+    &:nth-child(2) {
+      order: 2;
+    }
+
+    &:nth-child(3) {
+      order: 1;
+    }
+  }
+
+  .features-list__header {
+    padding-left: 0;
+    padding-top: 130px;
+    font-size: 21px;
+    line-height: 26px;
+  }
+
+  .features-list__description {
+    padding-top: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 1px;
   }
 }
 

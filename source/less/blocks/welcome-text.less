@@ -7,10 +7,10 @@
 
   line-height: 26px;
   text-align: center;
-  padding-top: 20px;
+  padding-top: 22px;
   padding-left: 25px;
   padding-right: 25px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 
@@ -29,4 +29,30 @@
 
 .welcome-text__reasons--narrow {
   line-height: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome-text {
+    padding-top: 29px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-bottom: 28px;
+  }
+
+  .welcome-text__about {
+    color: @black;
+    font-weight: bold;
+    font-size: 21px;
+    padding-bottom: 7px;
+  }
+
+  .welcome-text__reasons {
+    color: @grey;
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*desktop*/
 }
