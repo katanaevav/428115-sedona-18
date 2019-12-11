@@ -12,6 +12,20 @@
   background-repeat: no-repeat;
   background-color: @light-blue;
   text-align: center;
+
+  &::after {
+    @media @mobile-width-only {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../../img/bg-intro-triangle-mobile.svg");
+      width: 100%;
+      top: 364px;
+      content: "";
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  }
 }
 
 .promo__text-image {
@@ -20,20 +34,6 @@
   max-width: 100%;
   height: auto;
 }
-
-// @media @mobile-width-only {
-//   .promo::after {
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     background-image: url("../../img/bg-intro-triangle-mobile.svg");
-//     width: 100%;
-//     top: 364px;
-//     content: "";
-//     background-repeat: no-repeat;
-//     z-index: 1;
-//   }
-// }
 
 @media (min-width: @tablet-width) {
   .promo {
