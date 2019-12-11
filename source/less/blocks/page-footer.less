@@ -17,8 +17,23 @@
 }
 
 .page-footer__develop-link {
+  padding-bottom: 50px;
   line-height: 26px;
   color: @black;
+
+  &:hover path,
+  &:focus path {
+    fill: #81b3d2;
+  }
+
+  &:active path {
+    fill: #b2b2b2;
+  }
+}
+
+.page-footer__develop-link svg {
+  vertical-align: middle;
+  padding-left: 10px;
 }
 
 @media (min-width: @tablet-width) {
@@ -43,4 +58,13 @@
 
 @media (min-width: @desktop-width) {
   /*desktop*/
+  .page-footer {
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-bottom: 0;
+  }
+
+  .page-footer__develop-link {
+    padding-bottom: 43px;
+  }
 }
