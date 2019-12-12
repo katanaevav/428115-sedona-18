@@ -11,25 +11,54 @@
   padding-left: 25px;
   padding-right: 25px;
   padding-bottom: 18px;
+
+  &__about {
+    color: @black;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+  
+  &__reasons {
+    color: @grey;
+    font-size: 14px;
+    padding-bottom: 8px;
+  }
+  
+  &__reasons--narrow {
+    line-height: 24px;
+  }
 }
 
+.page-photo { 
+  .welcome-text{
+    padding-top: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 6px;
+  }
 
-.welcome-text__about {
-  color: @black;
-  font-weight: bold;
-  font-size: 18px;
-  padding-bottom: 10px;
+  .welcome-text__about {
+    padding-bottom: 8px;
+  }
 }
 
-.welcome-text__reasons {
-  color: @grey;
-  font-size: 14px;
-  padding-bottom: 8px;
-}
+// .welcome-text__about {
+//   color: @black;
+//   font-weight: bold;
+//   font-size: 18px;
+//   padding-bottom: 10px;
+// }
 
-.welcome-text__reasons--narrow {
-  line-height: 24px;
-}
+// .welcome-text__reasons {
+//   color: @grey;
+//   font-size: 14px;
+//   padding-bottom: 8px;
+// }
+
+// .welcome-text__reasons--narrow {
+//   line-height: 24px;
+// }
 
 @media (min-width: @tablet-width) {
   .welcome-text {
@@ -37,19 +66,35 @@
     padding-left: 110px;
     padding-right: 110px;
     padding-bottom: 28px;
+    
+    &__about {
+      color: @black;
+      font-weight: bold;
+      font-size: 21px;
+      padding-bottom: 7px;
+    }
+  
+    &__reasons {
+      color: @grey;
+      font-size: 14px;
+      padding-bottom: 8px;
+    }
   }
 
-  .welcome-text__about {
-    color: @black;
-    font-weight: bold;
-    font-size: 21px;
-    padding-bottom: 7px;
-  }
+  .page-photo { 
+    .welcome-text {
+      padding-top: 44px;
 
-  .welcome-text__reasons {
-    color: @grey;
-    font-size: 14px;
-    padding-bottom: 8px;
+      &__about {
+        font-size: 30px;
+        padding-bottom: 0;
+      }
+
+      &__reasons {
+        padding-left: 150px;
+        padding-right: 150px;
+      }
+    }
   }
 }
 
@@ -58,5 +103,21 @@
   .welcome-text {
     padding-left: 310px;
     padding-right: 310px;
+  }
+
+  .page-photo { 
+    .welcome-text {
+      padding-top: 81px;
+
+      &__about {
+        font-size: 30px;
+        padding-bottom: 0;
+      }
+
+      &__reasons {
+        padding-left: 360px;
+        padding-right: 360px;
+      }
+    }
   }
 }

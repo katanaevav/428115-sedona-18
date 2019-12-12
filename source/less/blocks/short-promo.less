@@ -1,27 +1,79 @@
 .short-promo {
-  border: 2px solid @red;
-  margin: 2px;
-  padding: 2px;
+  // border: 2px solid @red;
+  // margin: 2px;
+  // padding: 2px;
+
+  padding-left: 45px;
+  padding-right: 45px;
 
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-color: @light-blue;
   text-align: center;
+
+  position: relative;
+
+  &::after {
+    @media @mobile-width-only {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url("../../img/bg-intro-triangle-mobile.svg");
+      width: 100%;
+      top: 133px;
+      content: "";
+      background-repeat: no-repeat;
+      z-index: 1;
+    }
+  }
+
+  &__short-text-image {
+    padding-top: 51px;
+    padding-bottom: 62px;
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-.short-promo__short-text-image {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+// .short-promo__short-text-image {
+//   padding-top: 51px;
+//   padding-bottom: 62px;
+//   max-width: 100%;
+//   height: auto;
+// }
 
 @media (min-width: @tablet-width) {
   .short-promo {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: bottom;
+
+    &__short-text-image {
+      padding-top: 94px;
+      padding-bottom: 110px;
+    }
   }
+
+  // .short-promo__short-text-image {
+  //   padding-top: 94px;
+  //   padding-bottom: 110px;
+  // }
 }
 
 @media (min-width: @desktop-width) {
   .short-promo {
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: bottom;
+
+    &__short-text-image {
+      padding-top: 100px;
+      padding-bottom: 116px;
+    }
   }
+
+
+  // .short-promo__short-text-image {
+  //   padding-top: 100px;
+  //   padding-bottom: 116px;
+  // }
 }
