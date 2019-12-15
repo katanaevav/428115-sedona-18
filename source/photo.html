@@ -45,8 +45,15 @@
         <h1 class="visually-hidden">Фото и видео галлерея</h1>
         <section class="short-promo">
           <img class="short-promo__short-text-image" src="./img/text-sedona.svg" alt="Седона">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/bg-intro-triangle-tablet.svg">
+            <img class="promo__triangle-mobile" src="./img/bg-intro-triangle-mobile.svg" alt="Декоративный элемент">
+          </picture>
+
         </section>
-        <section class="welcome-text">
+        <section class="welcome-text welcome-text--gallary">
           <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
           <p class="welcome-text__about">Фото и видео</p>
           <p class="welcome-text__reasons welcome-text__reasons--narrow">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
@@ -55,31 +62,39 @@
           <ul class="photos__list gallary">
             <li class="gallary__item gallary__item--large">
               <a class="gallary__image-link"><img class="gallary__image" src="./img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="Неродные просторы"></a>
-              <p class="gallary__title">Неродные просторы</p>
-              <p class="gallary__author">Автор фото: Борис</p>
-              <span class="gallary__likes">1350</span>
+              <div class="gallary__description">
+                <p class="gallary__title">Неродные просторы</p>
+                <p class="gallary__author">Автор фото: Борис</p>
+                <span class="gallary__likes">1350</span>
+              </div>
             </li>
             <li class="gallary__item">
               <a class="gallary__image-link"><img class="gallary__image" src="./img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="Местная растительность"></a>
-              <p class="gallary__title">Местная растительность</p>
-              <p class="gallary__author">Автор фото: Сергей</p>
-              <span class="gallary__likes">143</span>
+              <div class="gallary__description">
+                <p class="gallary__title">Местная растительность</p>
+                <p class="gallary__author">Автор фото: Сергей</p>
+                <span class="gallary__likes">143</span>
+              </div>
             </li>
             <li class="gallary__item">
               <a class="gallary__image-link"><img class="gallary__image" src="./img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="Дорога на север"></a>
-              <p class="gallary__title">Дорога на север</p>
-              <p class="gallary__author">Автор фото: Петр</p>
-              <span class="gallary__likes">96</span>
+              <div class="gallary__description">
+                <p class="gallary__title">Дорога на север</p>
+                <p class="gallary__author">Автор фото: Петр</p>
+                <span class="gallary__likes">96</span>
+              </div>
             </li>
             <li class="gallary__item">
               <a class="gallary__image-link"><img class="gallary__image" src="./img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="Мост дьявола"></a>
-              <p class="gallary__title">Мост дьявола</p>
-              <p class="gallary__author">Автор фото: Антон</p>
-              <span class="gallary__likes">254</span>
+              <div class="gallary__description">
+                <p class="gallary__title">Мост дьявола</p>
+                <p class="gallary__author">Автор фото: Антон</p>
+                <span class="gallary__likes">254</span>
+              </div>
             </li>
           </ul>
         </section>
-        <section class="welcome-text">
+        <section class="welcome-text welcome-text--gallary-total">
           <h2 class="visually-hidden">Сомнения в сторону</h2>
           <p class="welcome-text__about">Все еще сомневаетесь?</p>
           <p class="welcome-text__reasons welcome-text__reasons--narrow">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>

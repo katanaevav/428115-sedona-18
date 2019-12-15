@@ -13,51 +13,32 @@
   background-repeat: no-repeat;
   background-color: @light-blue;
   text-align: center;
-
-  &::after {
-    @media @mobile-width-only {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-image: url("../../img/bg-intro-triangle-mobile.svg");
-      width: 100%;
-      top: 364px;
-      content: "";
-      background-repeat: no-repeat;
-      z-index: 1;
-    }
-  }
-
-  &__text-image {
-    padding-top: 90px;
-    padding-bottom: 80px;
-    max-width: 100%;
-    height: auto;
-  }
 }
 
-// .promo__text-image {
-//   padding-top: 90px;
-//   padding-bottom: 80px;
-//   max-width: 100%;
-//   height: auto;
-// }
+.promo__text-image {
+  padding-top: 90px;
+  padding-bottom: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
+.promo__triangle-mobile {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
 
 @media (min-width: @tablet-width) {
   .promo {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
     background-position: bottom;
-
-    &__text-image {
-      padding-top: 77px;
-      padding-bottom: 85px;
-    }
   }
 
-  // .promo__text-image {
-  //   padding-top: 77px;
-  //   padding-bottom: 85px;
-  // }
+  .promo__text-image {
+    padding-top: 77px;
+    padding-bottom: 85px;
+  }
 }
 
 @media (min-width: @desktop-width) {

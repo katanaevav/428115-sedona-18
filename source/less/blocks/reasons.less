@@ -9,28 +9,37 @@
 }
 
 .reasons__item {
+  position: relative;
+
   background-color: @light-blue;
   color: @white;
   margin: 0;
   padding-left: 25px;
   padding-right: 25px;
-  padding-top: 40px;
+  padding-top: 39px;
   padding-bottom: 40px;
 }
 
+.reasons__item--with-triangle {
+  // padding-top: 10px;
+}
+
 .reasons--other {
-  padding-top: 30px;
-  padding-bottom: 25px;
+  padding-top: 26px;
+  padding-bottom: 28px;
   background-color: @light-grey;
   color: @black;
 }
 
+.reasons__triangle-mobile {
+  display: none;
+}
 
 @media @mobile-width-only {
   .reasons--other {
-    &:first-child {
-      padding-top: 20px;
-    }
+    // &:first-child {
+    //   padding-top: 20px;
+    // }
 
     &:nth-child(2) {
       position: relative;
@@ -38,7 +47,7 @@
       &::before {
         position: absolute;
         left: 20px;
-        top: 0;
+        top: -1px;
         content: "";
         height: 1px;
         width: 280px;
@@ -48,7 +57,7 @@
       &::after {
         position: absolute;
         left: 20px;
-        bottom: 0;
+        bottom: -1px;
         content: "";
         height: 1px;
         width: 280px;
@@ -56,31 +65,15 @@
       }
     }
   }
+
+  .reasons__triangle-mobile {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
 }
-
-// .reasons--other:nth-child(2) {
-//   position: relative;
-// }
-
-// .reasons--other:nth-child(2)::before {
-//   position: absolute;
-//   left: 20px;
-//   top: 0;
-//   content: "";
-//   height: 1px;
-//   width: 280px;
-//   border-top: 1px solid #d6d6d6;
-// }
-
-// .reasons--other:nth-child(2)::after {
-//   position: absolute;
-//   left: 20px;
-//   bottom: 0;
-//   content: "";
-//   height: 1px;
-//   width: 280px;
-//   border-bottom: 1px solid #d6d6d6;
-// }
 
 .reasons--other .reasons__description,
 .reasons--other .reasons__number {
@@ -95,6 +88,13 @@
   line-height: 26px;
 }
 
+@media @mobile-width-only {
+  .reasons__item--with-triangle .reasons__header {
+    padding-top: 37px;
+    position: relative;
+  }
+}
+
 .reasons__number {
   margin: 0;
   padding-bottom: 15px;
@@ -106,16 +106,13 @@
 
 .reasons__photo {
   background-color: @light-blue;
+  vertical-align: bottom;
 }
 
 @media (min-width: @tablet-width) {
   .reasons {
     display: flex;
     justify-content: center;
-  }
-
-  .reasons--other {
-    padding-bottom: 45px;
   }
 
   .reasons--reverse .reasons__photo {
@@ -126,6 +123,11 @@
     box-sizing: border-box;
     padding-top: 45px;
     width: 33.3%;
+  }
+
+  .reasons--other {
+    // padding-top: 45px;
+    padding-bottom: 45px;
   }
 
   .reasons__header {

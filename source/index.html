@@ -46,6 +46,17 @@
         <section class="promo">
           <!-- <img class="promo__text-image" src="./img/text-sedona-index.svg" width="282" height="214" alt="Седона"> -->
           <img class="promo__text-image" src="./img/text-sedona-index.svg" alt="Седона">
+
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./img/bg-intro-triangle-desktop.svg">
+            <source media="(min-width: 768px)" srcset="./img/bg-intro-triangle-tablet.svg">
+            <img class="promo__triangle-mobile" src="./img/bg-intro-triangle-mobile.svg" alt="Декоративный элемент">
+          </picture>
+
+          <!-- <svg class="promo__triangle-mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="322px" height="26.111px" viewBox="440.469 30.889 320 26.111" enable-background="new 440.469 30.889 320 26.111" xml:space="preserve">
+            <polygon fill="#FFFFFF" points="760.469,57 760.469,30.889 599.955,57"/>
+            <polygon fill="#FFFFFF" points="440.469,57 599.955,57 440.469,31.056"/>
+          </svg> -->
         </section>
         <section class="welcome-text">
           <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
@@ -53,7 +64,11 @@
           <p class="welcome-text__reasons">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         </section>
         <article class="reasons">
-          <div class="reasons__item">
+          <div class="reasons__item reasons__item--with-triangle">
+            <svg class="reasons__triangle-mobile" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="320px" height="37px" viewBox="0 12.452 320 37" enable-background="new 0 12.452 320 37" xml:space="preserve">
+              <polygon fill="#81b3d2" points="0,0,320,37 "/>
+              <polygon fill="#ffffff" points="320,12.452 0,12.452 0,34.175 160,49.452 320,34.175 "/>
+            </svg>
             <h3 class="reasons__header">Настоящий городок</h3>
             <p class="reasons__number">&ndash; №1 &ndash;</p>
             <p class="reasons__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
@@ -78,7 +93,7 @@
         <!-- </article> -->
         <article class="reasons reasons--reverse">
           <div class="reasons__item">
-            <h3 class="reasons__header">&nbsp;Там есть &nbsp; мост дьявола</h3>
+            <h3 class="reasons__header">&nbsp;Там есть мост дьявола</h3>
             <p class="reasons__number">&ndash; №2 &ndash;</p>
             <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
