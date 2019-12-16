@@ -18,9 +18,11 @@
 
 .gallary__image {
   background-color: @light-blue;
+  vertical-align: middle;
 }
 
-.gallary__description {
+.gallary__description,
+.gallary__text-description {
   display: flex;
   flex-direction: column;
 }
@@ -28,7 +30,7 @@
 .gallary__title {
   font-weight: bold;
   margin: 0;
-  padding-top: 8px;
+  padding-top: 15px;
 }
 
 .gallary__author {
@@ -62,24 +64,82 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 20px;
+    padding-left: 60px;
+    padding-right: 60px;
   }
 
   .gallary__item {
-    width: 49.4%;
+    width: 50%;
     border: none;
+    padding: 0;
   }
 
   .gallary__item--large {
     width: 100%;
+  }
+
+  .gallary__image {
+    width: 100%;
+    height: 266px;
+  }
+
+  .gallary__item--large .gallary__image {
+    height: 400px;
+  }
+
+  .gallary__description {
+    background-color: #f2f2f2;
+    padding-right: 20px;
+    padding-left: 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .gallary__text-description {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .gallary {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   .gallary__item {
-    width: 32.9%;
+    width: 33.334%;
+    position: relative;
   }
 
   .gallary__item--large {
     width: 100%;
+  }
+
+  .gallary__description {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: @white;
+  }
+
+  .gallary__text-description {
+    padding-left: 22px;
+    padding-bottom: 15px;
+  }
+
+  .gallary__author {
+    color: @white;
+  }
+
+  .gallary__likes {
+    padding-right: 20px;
   }
 }
