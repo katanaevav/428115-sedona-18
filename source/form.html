@@ -21,6 +21,11 @@
                 </g>
               </svg>
           </button>
+          <button class="page-header__close-menu" type="button">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
+              <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
+            </svg>
+          </button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--left">
               <a href="/">Главная</a>
@@ -46,14 +51,14 @@
         <section class="short-promo">
             <img class="short-promo__short-text-image" src="./img/text-sedona.svg" alt="Седона">
 
-            <picture>
+            <!-- <picture>
               <source media="(min-width: 1200px)" srcset="./img/bg-intro-triangle-desktop.svg">
               <source media="(min-width: 768px)" srcset="./img/bg-intro-triangle-tablet.svg">
               <img class="promo__triangle-mobile" src="./img/bg-intro-triangle-mobile.svg" alt="Декоративный элемент">
-            </picture>
+            </picture> -->
 
           </section>
-        <section class="welcome-text">
+        <section class="welcome-text welcome-text--form">
           <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
           <p class="welcome-text__about">Оставьте свой отзыв</p>
           <p class="welcome-text__reasons welcome-text__reasons--narrow">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а так же о посещенных вами достопримечательностях</p>
@@ -81,12 +86,16 @@
             <p class="contacts__caption review-form__title">Контактная информация:</p>
             <ul class="contacts__elements review-form__elements">
               <li class="contacts__text-input-element">
-                <label class="contacts__label" for="contacts-text__phone">Контактный телефон*:</label>
-                <input class="contacts__input" id="contacts-text__phone" type="tel" name="phone" placeholder="Введите телефон" required>
+                <label class="contacts__label" for="contacts-text__phone"><span class="contacts__hide-text">Контактный </span>телефон*:</label>
+                <span class="contacts__input--phone-icon">
+                  <input class="contacts__input" id="contacts-text__phone" type="tel" name="phone" placeholder="Введите телефон" required>
+                </span>
               </li>
               <li class="contacts__text-input-element">
                 <label class="contacts__label" for="contacts-text__email">Электронная почта*:</label>
-                <input class="contacts__input" id="contacts-text__email" type="email" name="email" placeholder="Введите e-mail" required>
+                <span class="contacts__input--email-icon">
+                  <input class="contacts__input" id="contacts-text__email" type="email" name="email" placeholder="Введите e-mail" required>
+                </span>
               </li>
             </ul>
           </div>
@@ -112,7 +121,7 @@
               <ul class="attractions_elements review-form__elements">
                 <li class="attractions__checkbox-element">
                   <input class="attractions__checkbox" type="checkbox" name="attractions-devil-bridge" id="attractions__devil-bridge" value="devil-bridge" checked>
-                  <label class="attractions__label" for="attractions__devil-bridge">Мост дьявола</label>
+                  <label class="attractions__label" for="attractions__devil-bridge">Мост Дьявола</label>
                 </li>
                 <li class="attractions__checkbox-element">
                   <input class="attractions__checkbox" type="checkbox" name="attractions-bell-mountine" id="attractions__bell-mountine" value="bell-mountine" checked>
@@ -120,7 +129,7 @@
                 </li>
                 <li class="attractions__checkbox-element">
                   <input class="attractions__checkbox" type="checkbox" name="attractions-slide-park" id="attractions__slide-park" value="slide-park" checked>
-                  <label class="attractions__label" for="attractions__slide-park">Слайд-Парк</label>
+                  <label class="attractions__label" for="attractions__slide-park">Слайд-парк</label>
                 </li>
                 <li class="attractions__checkbox-element">
                   <input class="attractions__checkbox" type="checkbox" name="attractions-red-rocks" id="attractions__red-rocks" value="red-rocks">

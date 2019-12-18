@@ -1,9 +1,12 @@
 .review-form {
-  border: 2px solid @red;
-  margin: 2px;
-  padding: 2px;
+  //  border: 1px solid @red;
+  // margin: 2px;
+  // padding: 2px;
 
   // text-align: center;
+
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 // .rewiew-wrapper {
@@ -13,7 +16,13 @@
 .review-form__button-wrapper {
   display: flex;
   justify-content: center;
-  padding: 30px;
+  padding-top: 30px;
+  // padding-bottom: 30px;
+  // padding: 30px;
+  // padding-right: 20px;
+  // padding-left: 20px;
+  padding-bottom: 42px;
+  align-items: center;
 }
 
 .review-form__submit {
@@ -21,20 +30,28 @@
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+  width: 100%;
+  min-height: 58px;
   color: @white;
   background-color: @light-blue;
   text-transform: uppercase;
+  border: none;
 }
 
 .review-form__title {
   font-size: 18px;
   text-align: center;
   font-weight: bold;
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 21px;
 }
 
 .review-form__elements {
   margin: 0;
   padding: 0;
+  // padding-left: 20px;
+  // padding-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -48,6 +65,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-left: 60px;
+    padding-right: 60px;
+    // border: 1px solid black;
+  }
+
+  .review-form__title {
+    font-size: 21px;
+    text-align: left;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 49px;
+    padding-bottom: 58px;
   }
 
   .review-form div {
@@ -55,7 +84,8 @@
   }
 
   .review-form div:nth-child(1) {
-    width: 48%;
+    // width: 50%;
+    width: 41%;
   }
 
   .review-form div:nth-child(2) {
@@ -64,7 +94,7 @@
 
   .review-form div:nth-child(3) {
     order: -1;
-    width: 48%;
+    width: 50%;
   }
 
   .review-form div:nth-child(4) {
@@ -77,9 +107,9 @@
 
   .review-form__button-wrapper {
     justify-content: space-between;
-  }
+    padding-bottom: 69px;
 
-  .review-form__button-wrapper::after {
+    &::after {
     margin-top: 5px;
     content: "* - обязательные поля";
     background-color: @white;
@@ -87,9 +117,29 @@
     color: @grey;
     font-size: 14px;
     line-height: 26px;
+    }
+  }
+
+  .review-form__submit {
+    width: 50%;
+    padding-left: 0;
   }
 }
 
 @media (min-width: @desktop-width) {
   /* desktop*/
+  .review-form {
+    flex-wrap: wrap;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .review-form__title {
+    padding-top: 46px;
+    padding-bottom: 58px;
+  }
+
+  .review-form__button-wrapper {
+    padding-bottom: 72px;
+  }
 }
