@@ -48,7 +48,7 @@
       content: "";
       top: 43px;
       left: 0;
-      width: 280px;
+      width: 125px;
       height: 1px;
       border-top: 1px solid #dbdbdb;
     }
@@ -58,7 +58,7 @@
       content: "";
       top: 43px;
       right: 0;
-      width: 280px;
+      width: 125px;
       height: 1px;
       border-top: 1px solid #dbdbdb;
     }
@@ -68,5 +68,17 @@
     text-align: center;
     padding-top: 31px;
     padding-bottom: 56px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .emotions {
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
   }
 }
