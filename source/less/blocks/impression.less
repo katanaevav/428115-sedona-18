@@ -1,9 +1,11 @@
 .impression {
-  border: 2px solid @green;
-  margin: 2px;
-  padding: 2px;
+  // border: 2px solid @green;
+  // margin: 2px;
+  // padding: 2px;
 
+  border-top: 1px solid #e5e5e5;
   line-height: 26px;
+  padding-bottom: 17px;
 }
 
 // .impression__caption {
@@ -12,12 +14,113 @@
 //   font-weight: bold;
 // }
 
+.impression__elements {
+  display: flex;
+  flex-direction: column;
+  // padding-top: 10px;
+}
+
 .impression__radio-button-element {
-  padding: 5px;
+  padding-top: 15px;
+  padding-bottom: 27px;
+  padding-left: 20px;
+}
+
+.impression__radio {
+  display: none;
 }
 
 .impression__label {
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
+  padding-left: 58px;
+
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -14px;
+    left: -20px;
+    width: 56px;
+    height: 56px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+  }
+
+  &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:active::before {
+    background-color: #d5d5d5;
+  }
+}
+
+.impression__radio:checked ~ .impression__label {
+  &::after {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: -3px;
+    width: 22px;
+    height: 22px;
+    margin: auto;
+    border-radius: 50%;
+    background-color: #333333;
+  }
+
+  &:active::after {
+    background-color: rgba(51, 51, 51, 0.3);
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .impression {
+    border: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 55px;
+      right: 2px;
+      width: 1px;
+      height: 292px;
+      border-left: 1px solid #dbdbdb;
+    }
+  }
+
+  .impression__radio-button-element {
+    padding-bottom: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .impression {
+    border: none;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 51px;
+      right: 5px;
+      width: 1px;
+      height: 292px;
+      border-left: 1px solid #dbdbdb;
+    }
+  }
+
+  .impression__caption {
+    text-align: left;
+    padding-left: 80px;
+  }
+
+  .impression__radio-button-element {
+    padding-left: 23px;
+  }
 }

@@ -1,27 +1,85 @@
 .promo {
-  border: 2px solid @red;
+  /*border: 2px solid @red;
   margin: 2px;
-  padding: 2px;
+  padding: 2px;*/
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  position: relative;
 
   background-image: url("../../img/bg-back-mobile@1x.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
   background-color: @light-blue;
   text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -23px;
+    left: 0;
+    height: 49px;
+    width: 100%;
+    background-image: url("../../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 103%, 49px;
+  }
 }
 
 .promo__text-image {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 90px;
+  padding-bottom: 80px;
+  max-width: 100%;
+  height: auto;
+}
+
+.promo__triangle-mobile {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
 @media (min-width: @tablet-width) {
   .promo {
     background-image: url("../../img/bg-back-tablet@1x.jpg");
+    background-position: bottom;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -23px;
+      left: 0;
+      height: 80px;
+      width: 100%;
+      background-image: url("../../img/bg-intro-triangle-tablet.svg");
+      background-repeat: no-repeat;
+      background-size: 100%, 80px;
+    }
+  }
+
+  .promo__text-image {
+    padding-top: 77px;
+    padding-bottom: 85px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .promo {
     background-image: url("../../img/bg-back-desktop@1x.jpg");
+    background-position: bottom;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -53px;
+      left: 0;
+      height: 110px;
+      width: 100%;
+      background-image: url("../../img/bg-intro-triangle-desktop.svg");
+      background-repeat: no-repeat;
+      background-size: 100%, 110px;
+    }
   }
 }

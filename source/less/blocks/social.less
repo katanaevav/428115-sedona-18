@@ -1,5 +1,56 @@
 .social {
-  border: 2px solid @green;
-  margin: 2px;
-  padding: 2px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 40px;
+}
+
+.social__link {
+  height: 48px;
+  min-width: 46px;
+  background-color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+  }
+
+  &:active path {
+    fill: #88b6d1;
+  }
+}
+
+.social__item {
+  padding-top: 4px;
+  padding-left: 3px;
+  padding-right: 3px;
+
+  // border: 2px solid @black;
+  // margin: 2px;
+  // padding: 2px;
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    padding-bottom: 40px;
+  }
+
+  .social__item {
+    padding-top: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  /*desktop*/
+  .social {
+    padding-bottom: 0;
+  }
 }
