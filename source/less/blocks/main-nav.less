@@ -1,11 +1,73 @@
+@keyframes main-nav__show-animation {
+  0% {
+    transform: scaleY(0);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
 .main-nav {
   /*main-nav*/
   margin-bottom: 56px;
 }
 
+.main-nav--hide {
+  @media @mobile-width-only {
+    display: none;
+  }
+}
+
+.main-nav--show {
+  @media @mobile-width-only {
+    transform-origin: top;
+    animation: main-nav__show-animation 0.3s;
+  }
+}
+
+.main-nav__close-nav {
+  position: absolute;
+  top: 16px;
+  right: 14px;
+
+  border: none;
+  background: none;
+
+  cursor: pointer;
+}
+
+.main-nav__close-nav polygon {
+  fill: @white;
+}
+
+.main-nav__open-nav {
+  position: absolute;
+  // top: 17px;
+  bottom: 14px;
+  right: 14px;
+  // margin-left: -51px;
+
+  border: none;
+  color: @light-blue;
+  background-color: @white;
+
+  fill: @light-blue;
+
+  cursor: pointer;
+}
+
 @media (min-width: @tablet-width) {
   .main-nav {
     margin-bottom: 0;
+  }
+
+  .main-nav__open-nav {
+    display: none;
+  }
+
+  .main-nav__close-nav {
+    display: none;
   }
 }
 
