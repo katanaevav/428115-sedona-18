@@ -10,6 +10,7 @@ openNavButton.addEventListener("click", function () {
     if (searchNav.classList.contains("main-nav--hide")) {
       searchNav.classList.remove("main-nav--hide");
     }
+    openNavButton.classList.add("main-nav--hide");
     isShowing = true;
   }
 });
@@ -18,5 +19,8 @@ closeNavButton.addEventListener("click", function () {
   if (isShowing) {
     searchNav.classList.add("main-nav--hide");
     isShowing = false;
+    if (openNavButton.classList.contains("main-nav--hide")) {
+      openNavButton.classList.remove("main-nav--hide");
+    }
   }
 });

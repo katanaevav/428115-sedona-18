@@ -4,12 +4,13 @@
   // padding: 2px;
 
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 108px;
 }
 
 .video-player__movie {
   width: 320px;
-  height: 210px;
+  height: 200px;
+  vertical-align: bottom;
 }
 
 .video-player__controls {
@@ -21,7 +22,7 @@
   padding-right: 25px;
 
   background-color: #f2f2f2;
-  bottom: 44px;
+  bottom: 40px;
   left: 0;
   right: 0;
 
@@ -115,7 +116,7 @@
     // padding-top: 20px;
     padding-left: 60px;
     padding-right: 60px;
-    padding-bottom: 86px;
+    padding-bottom: 40px;
   }
 
   .video-player__movie {
@@ -128,7 +129,7 @@
     padding-right: 35px;
 
     background-color: rgba(0, 0, 0, 0.6);
-    bottom: 139px;
+    bottom: 40px;
     left: 0;
     right: 0;
 
@@ -201,14 +202,20 @@
 
 @media (min-width: @desktop-width) {
   .video-player {
-    padding-bottom: 85px;
+    padding-bottom: 86px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+
+  .video-player__movie {
+    width: 800px;
   }
 
   .video-player__controls {
-    bottom: 91px;
+    bottom: 86px;
 
-    margin-left: 202px;
-    margin-right: 202px;
+    margin-left: 200px;
+    margin-right: 200px;
   }
 
   .video-player__progress {
