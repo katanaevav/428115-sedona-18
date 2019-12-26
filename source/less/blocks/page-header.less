@@ -7,48 +7,48 @@
 
 .page-header__logo {
   position: absolute;
-  bottom: -47px;
-  // left: 0;
+  bottom: -27px;
   left: 50%;
   margin-left: -93px;
-  // border: 1px solid black;
-  // right: 0;
-  // margin: auto;
+  height: 83px;
 
   z-index: 1;
 }
 
-.sedona-logo__blue-background {
+.page-header__blue-background {
   display: none;
 }
 
-.sedona-logo__bridge {
+.page-header__bridge {
+  display: none;
+}
+
+.page-header__clouds {
   display: none;
 }
 
 @media (min-width: @tablet-width) {
   .page-header__logo {
-    // position: absolute;
     top: 0;
   }
 
-  .sedona-logo__bridge {
+  .page-header__bridge,
+  .page-header__clouds {
     display: inline;
   }
 
   .page-header {
     position: relative;
-    // min-height: 0;
     justify-content: center;
   }
 }
 
 @media (min-width: @desktop-width) {
   .page-header__logo {
-    width: 189px;
+    height: 96px;
   }
 
-  .sedona-logo__blue-background {
+  .page-header__blue-background {
     display: inline;
   }
 }
