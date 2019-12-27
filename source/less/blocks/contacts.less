@@ -60,7 +60,7 @@
   }
 }
 
-.contacts__input--phone-icon {
+.contacts__input-phone {
   position: relative;
   width: 100%;
 
@@ -73,13 +73,19 @@
     height: 58px;
 
     background-color: #e6e6e6;
-    background-image: url("../img/icon-phone.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
 }
 
-.contacts__input--email-icon {
+.contacts__input-phone-icon {
+  position: absolute;
+  top: 20px;
+  right: 19px;
+  width: 18px;
+  height: 18px;
+  z-index: 1;
+}
+
+.contacts__input-email {
   position: relative;
   width: 100%;
 
@@ -92,10 +98,16 @@
     height: 58px;
 
     background-color: #e6e6e6;
-    background-image: url("../img/icon-mail.svg");
-    background-repeat: no-repeat;
-    background-position: center;
   }
+}
+
+.contacts__input-email-icon {
+  position: absolute;
+  top: 21px;
+  right: 21px;
+  width: 16px;
+  height: 16px;
+  z-index: 1;
 }
 
 @media (min-width: @tablet-width) {
