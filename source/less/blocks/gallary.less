@@ -45,18 +45,15 @@
   font-weight: bold;
   padding-top: 8px;
   padding-left: 37px;
+}
 
-  &::before {
-    position: absolute;
-
-    content: "";
-    background-image: url("../img/icon-like.svg");
-    top: 7px;
-    left: 0;
-    background-size: 22px 20px;
-    height: 20px;
-    width: 22px;
-  }
+.gallary__likes-icon {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  height: 20px;
+  width: 22px;
+  fill: #b2b2b2;
 }
 
 @media (min-width: @tablet-width) {
@@ -109,12 +106,12 @@
   }
 
   .gallary__likes {
-    padding-top: 0;
+    padding-top: 1px;
+  }
 
-    &::before {
-      top: 1px;
-      left: 6px;
-    }
+  .gallary__likes-icon {
+    top: 1px;
+    left: 7px;
   }
 }
 
@@ -157,9 +154,10 @@
   .gallary__likes {
     padding-top: 2px;
     padding-right: 20px;
+  }
 
-    &::before {
-      left: 5px;
-    }
+  .gallary__likes-icon {
+    left: 5px;
+    fill: #ffffff;
   }
 }

@@ -71,16 +71,14 @@
   background: none;
   cursor: pointer;
 
-  & path {
-    fill: #5c6870;
-  }
+  fill: #5c6870;
 
-  &:hover path,
-  &:focus path {
+  &:hover, 
+  &:focus {
     fill: #333333;
   }
 
-  &:active path {
+  &:active {
     fill: rgba(51, 51, 51, 0.3);
   }
 }
@@ -96,19 +94,6 @@
 
 .video-player__button--fullscreen {
   margin-top: 3px;
-
-  & polygon {
-    fill: #5c6870;
-  }
-
-  &:hover polygon,
-  &:focus polygon {
-    fill: #333333;
-  }
-
-  &:active polygon {
-    fill: rgba(51, 51, 51, 0.3);
-  }
 }
 
 @media (min-width: @tablet-width) {
@@ -159,16 +144,14 @@
   }
 
   .video-player__button {
-    & path {
-      fill: #ffffff;
-    }
+    fill: #ffffff;
 
-    &:hover path,
-    &:focus path {
+    &:hover,
+    &:focus {
       fill: rgba(255, 255, 255, 0.6);
     }
 
-    &:active path {
+    &:active {
       fill: rgba(255, 255, 255, 0.3);
     }
   }
@@ -184,19 +167,6 @@
 
   .video-player__button--fullscreen {
     margin-top: 3px;
-
-    & polygon {
-      fill: #ffffff;
-    }
-
-    &:hover polygon,
-    &:focus polygon {
-      fill: rgba(255, 255, 255, 0.6);
-    }
-
-    &:active polygon {
-      fill: rgba(255, 255, 255, 0.3);
-    }
   }
 }
 
