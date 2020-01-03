@@ -17,11 +17,11 @@
 
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__open-nav" type="button">
+          <button class="main-nav__open-nav" type="button" aria-label="Открыть меню">
             <svg class="main-nav__open-nav-icon" width="23" height="22"><use xlink:href="#icon-menu"></use></svg>
           </button>
           <div class="main-nav__wrapper">
-            <button class="main-nav__close-nav" type="button">
+            <button class="main-nav__close-nav" type="button" aria-label="Закрыть меню">
               <svg class="main-nav__close-nav-icon" width="22" height="22"><use xlink:href="#icon-cross"></use></svg>
             </button>
             <ul class="main-nav__list site-list">
@@ -371,6 +371,8 @@
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
+          <iframe class="map_interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d837248.4489548883!2d-112.2162991680116!3d34.94462612050248!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1571251062258!5m2!1sru!2sru" allowfullscreen="">
+          </iframe>
           <picture>
             <source type="image/webp" media="(min-width: 1200px)" srcset="./img/bg-map-desktop@1x.webp 1x, ./img/bg-map-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="./img/bg-map-tablet@1x.webp 1x, ./img/bg-map-tablet@2x.webp 2x">
