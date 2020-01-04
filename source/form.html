@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Написать отзыв</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
@@ -15,11 +17,11 @@
 
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__open-nav" type="button">
+          <button class="main-nav__open-nav" type="button" aria-label="Открыть меню">
             <svg class="main-nav__open-nav-icon" width="23" height="22"><use xlink:href="#icon-menu"></use></svg>
           </button>
           <div class="main-nav__wrapper">
-            <button class="main-nav__close-nav" type="button">
+            <button class="main-nav__close-nav" type="button" aria-label="Закрыть меню">
               <svg class="main-nav__close-nav-icon" width="22" height="22"><use xlink:href="#icon-cross"></use></svg>
             </button>
             <ul class="main-nav__list site-list">
@@ -341,13 +343,16 @@
           </div>
         </form>
         <section class="sending-fail">
-          <h2 class="sending-fail__header">Что-то пошло не так</h2>
+          <h2 class="sending-fail__header">Что-то пошло не так!</h2>
           <p class="sending-fail__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           <button class="sending-fail__button" type="button">ОК</button>
         </section>
         <section class="sending-success">
           <h2 class="sending-success__header">Ваш отзыв отправлен!</h2>
-          <p class="sending-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+          <div class="sending-success__description-section">
+            <p class="sending-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.</p>
+            <p class="sending-success__description">В ближайшее время мы опубликуем его на сайте.</p>
+          </div>
           <button class="sending-success__button" type="button">Закрыть окно</button>
         </section>
       </main>
@@ -377,6 +382,6 @@
       </footer>
 
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
   </body>
 </html>

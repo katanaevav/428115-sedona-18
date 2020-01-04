@@ -2,8 +2,11 @@
   display: none;
 
   position: absolute;
-  top: 1530px;
+  top: 1543px;
   left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 
   background-color: @white;
 
@@ -11,20 +14,23 @@
   text-align: center;
   box-shadow: 0 5px 15px -5px rgba(0, 1, 1, 0.2),
     0 -5px 15px -15px rgba(0, 1, 1, 0.2);
-  padding-top: 35px;
+  padding-top: 25px;
   padding-bottom: 35px;
+
+  z-index: 2;
 }
 
 .sending-fail__header {
   font-size: 18px;
   font-weight: bold;
-  padding-bottom: 15px;
+  padding-bottom: 12px;
 }
 
 .sending-fail__description {
+  font-size: 14px;
   line-height: 24px;
   color: @grey;
-  padding-bottom: 15px;
+  padding-bottom: 9px;
   padding-left: 50px;
   padding-right: 50px;
 }
@@ -32,6 +38,7 @@
 .sending-fail__button {
   font: inherit;
   font-size: 18px;
+  line-height: 26px;
   font-weight: bold;
   color: @white;
   min-height: 58px;
@@ -39,4 +46,36 @@
   border: none;
   background-color: @light-blue;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .sending-fail {
+    top: 1430px;
+    width: 400px;
+    padding-top: 31px;
+    padding-bottom: 49px;
+  }
+
+  .sending-fail__header {
+    font-size: 30px;
+    line-height: 40px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 0;
+  }
+
+  .sending-fail__description {
+    padding-bottom: 16px;
+  }
+
+  .sending-fail__button {
+    font-size: 21px;
+    min-width: 272px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .sending-fail {
+    top: 1391px;
+  }
 }

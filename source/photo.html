@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона - Фото и видео</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preload" href="./fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
@@ -15,11 +17,11 @@
 
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__open-nav" type="button">
+          <button class="main-nav__open-nav" type="button" aria-label="Открыть меню">
             <svg class="main-nav__open-nav-icon" width="23" height="22"><use xlink:href="#icon-menu"></use></svg>
           </button>
           <div class="main-nav__wrapper">
-            <button class="main-nav__close-nav" type="button">
+            <button class="main-nav__close-nav" type="button" aria-label="Закрыть меню">
               <svg class="main-nav__close-nav-icon" width="22" height="22"><use xlink:href="#icon-cross"></use></svg>
             </button>
             <ul class="main-nav__list site-list">
@@ -258,7 +260,7 @@
         <section class="photos">
           <ul class="photos__list gallary">
             <li class="gallary__item gallary__item--large">
-              <a class="gallary__image-link">
+              <a href="#" class="gallary__image-link">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-sunset-desktop@1x.webp 1x, ./img/photo-sunset-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-sunset-tablet@1x.webp 1x, ./img/photo-sunset-tablet@2x.webp 2x">
@@ -280,7 +282,7 @@
               </div>
             </li>
             <li class="gallary__item">
-              <a class="gallary__image-link">
+              <a href="#" class="gallary__image-link">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-cactus-desktop@1x.webp 1x, ./img/photo-cactus-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-cactus-tablet@1x.webp 1x, ./img/photo-cactus-tablet@2x.webp 2x">
@@ -302,7 +304,7 @@
               </div>
             </li>
             <li class="gallary__item">
-              <a class="gallary__image-link">
+              <a href="#" class="gallary__image-link">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-roads-desktop@1x.webp 1x, ./img/photo-roads-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-roads-tablet@1x.webp 1x, ./img/photo-roads-tablet@2x.webp 2x">
@@ -325,7 +327,7 @@
               </div>
             </li>
             <li class="gallary__item">
-              <a class="gallary__image-link">
+              <a href="#" class="gallary__image-link">
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="./img/photo-bridge-desktop@1x.webp 1x, ./img/photo-bridge-desktop@2x.webp 2x">
                   <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bridge-tablet@1x.webp 1x, ./img/photo-bridge-tablet@2x.webp 2x">
@@ -356,6 +358,7 @@
         </section>
         <section class="video-player">
           <picture>
+            <h2 class="visually-hidden">Видеообзор седоны</h2>
             <source type="image/webp" media="(min-width: 1200px)" srcset="./img/video-desktop@1x.webp 1x, ./img/video-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)" srcset="./img/video-tablet@1x.webp 1x, ./img/video-tablet@2x.webp 2x">
             <source type="image/webp" srcset="./img/video-mobile@1x.webp 1x, ./img/video-mobile@2x.webp 2x">
@@ -403,7 +406,7 @@
       </footer>
 
     </div>
-    <script src="./js/script.js"></script>
+    <script src="./js/script.min.js"></script>
     <script src="./js/picturefill.min.js"></script>
   </body>
 </html>
