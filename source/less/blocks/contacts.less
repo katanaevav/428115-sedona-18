@@ -6,6 +6,7 @@
 
 .contacts__elements {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -128,6 +129,9 @@
     text-align: center;
     padding-top: 32px;
     padding-bottom: 25px;
+
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   .contacts__text-input-element {
@@ -164,6 +168,9 @@
   .contacts__caption {
     padding-top: 30px;
     padding-bottom: 73px;
+
+    padding-left: 290px;
+    padding-right: 290px;
   }
 
   .contacts__hide-text {
@@ -187,7 +194,7 @@
   .contacts__text-input-element {
     flex-direction: row;
 
-    &:first-child {
+    &:nth-child(2n-1) {
       padding-right: 78px;
     }
   }
