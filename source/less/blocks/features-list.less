@@ -6,6 +6,11 @@
   padding-top: 7px;
 }
 
+.features-list__show-br,
+.features-list__show-br-desktop {
+  display: none;
+}
+
 .features-list__item {
   position: relative;
 }
@@ -105,6 +110,10 @@
     padding: 0;
   }
 
+  .features-list__show-br {
+    display: inline;
+  }
+
   .features-list__item {
     padding: 30px;
     text-align: center;
@@ -144,5 +153,9 @@
 @media (min-width: @desktop-width) {
   .features-list__item {
     padding-bottom: 80px;
+  }
+
+  .features-list__show-br-desktop {
+    display: inline;
   }
 }
