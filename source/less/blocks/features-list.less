@@ -6,8 +6,8 @@
   padding-top: 7px;
 }
 
-.features-list__show-br,
-.features-list__show-br-desktop {
+.features-list__item:nth-child(2) br,
+.features-list__item:nth-child(3) br {
   display: none;
 }
 
@@ -110,7 +110,8 @@
     padding: 0;
   }
 
-  .features-list__show-br {
+  .features-list__item:nth-child(2) br,
+  .features-list__item:nth-child(3) br {
     display: inline;
   }
 
@@ -144,8 +145,8 @@
 
   .features-list__description {
     padding-top: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 1px;
   }
 }
@@ -153,9 +154,5 @@
 @media (min-width: @desktop-width) {
   .features-list__item {
     padding-bottom: 80px;
-  }
-
-  .features-list__show-br-desktop {
-    display: inline;
   }
 }

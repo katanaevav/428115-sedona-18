@@ -14,15 +14,15 @@
   padding-left: 37px;
 }
 
-.attractions__checkbox {
-  display: none;
+.attractions__checkbox:focus ~ .attractions__label::before {
+  outline: thin dotted;
 }
 
 .attractions__label {
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
-  padding-left: 42px;
+  padding-left: 24px;
 
   position: relative;
   cursor: pointer;
@@ -31,7 +31,7 @@
     content: "";
     position: absolute;
     top: -15px;
-    left: -37px;
+    left: -57px;
     width: 56px;
     height: 56px;
     margin: auto;
@@ -40,6 +40,10 @@
   }
 
   &:hover::before {
+    background-color: #e5e5e5;
+  }
+
+  &:focus::before {
     background-color: #e5e5e5;
   }
 
@@ -53,7 +57,7 @@
     content: "";
     position: absolute;
     top: 5px;
-    left: -21px;
+    left: -40px;
     width: 25px;
     height: 19px;
     background-image: url("../img/icon-tick.svg");
