@@ -1,5 +1,5 @@
 .impression {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid @dark-grey;
   line-height: 26px;
   padding-bottom: 17px;
 }
@@ -36,12 +36,12 @@
     height: 56px;
     margin: auto;
     border-radius: 50%;
-    background-color: #f2f2f2;
+    background-color: @lighter-grey;
   }
 
   &:hover::before,
   &:focus::before {
-    background-color: #e5e5e5;
+    background-color: @dark-grey;
   }
 
   &:active::before {
@@ -59,7 +59,7 @@
     height: 22px;
     margin: auto;
     border-radius: 50%;
-    background-color: #333333;
+    background-color: @grey;
   }
 
   &:active::after {
@@ -79,7 +79,7 @@
       right: 2px;
       width: 1px;
       height: 292px;
-      border-left: 1px solid #dbdbdb;
+      border-left: 1px solid @darker-grey;
     }
   }
 
@@ -100,7 +100,7 @@
       right: 5px;
       width: 1px;
       height: 292px;
-      border-left: 1px solid #dbdbdb;
+      border-left: 1px solid @darker-grey;
     }
   }
 
