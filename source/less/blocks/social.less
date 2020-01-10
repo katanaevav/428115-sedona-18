@@ -1,19 +1,20 @@
 .social {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  padding-bottom: 40px;
+  padding-bottom: 33px;
 }
 
 .social__link {
   height: 48px;
   min-width: 46px;
-  background-color: #81b3d2;
+  background-color: @light-blue;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #ffffff;
+  fill: @white;
 
   &:hover,
   &:focus {
@@ -30,6 +31,7 @@
   padding-top: 4px;
   padding-left: 3px;
   padding-right: 3px;
+  padding-bottom: 6px;
 }
 
 @media (min-width: @tablet-width) {

@@ -6,7 +6,6 @@
 
 .reasons__item {
   position: relative;
-
   background-color: @light-blue;
   color: @white;
   margin: 0;
@@ -16,9 +15,25 @@
   padding-bottom: 40px;
 }
 
+.reasons--reverse br {
+  display: none;
+}
+
+.reasons--other:nth-child(2) br {
+  display: none;
+}
+
+.reasons--other:nth-child(2) br + br {
+  display: inline;
+}
+
+.reasons--other:nth-child(3) br {
+  display: inline;
+}
+
 .reasons--other {
   padding-top: 26px;
-  padding-bottom: 28px;
+  padding-bottom: 29px;
   background-color: @light-grey;
   color: @black;
 }
@@ -115,10 +130,8 @@
   background-color: @light-blue;
   vertical-align: bottom;
   text-align: center;
-
   height: 260px;
   width: 100%;
-
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -134,6 +147,26 @@
   .reasons {
     display: flex;
     justify-content: center;
+  }
+
+  .reasons--reverse br {
+    display: inline;
+  }
+
+  .reasons--other:nth-child(2) br {
+    display: inline;
+  }
+
+  .reasons--other:nth-child(2) br + br {
+    display: none;
+  }
+
+  .reasons--other:nth-child(3) br {
+    display: none;
+  }
+
+  .reasons--reverse .reasons__description br {
+    display: none;
   }
 
   .reasons--reverse .reasons__photo {
@@ -180,9 +213,17 @@
     width: 33.3%;
   }
 
+  .reasons--other:nth-child(2) br {
+    display: none;
+  }
+
+  .reasons--reverse .reasons__description br {
+    display: inline;
+  }
+
   .reasons__description {
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 31px;
+    padding-right: 31px;
   }
 
   .reasons--other {

@@ -6,6 +6,11 @@
   padding-top: 7px;
 }
 
+.features-list__item:nth-child(2) br,
+.features-list__item:nth-child(3) br {
+  display: none;
+}
+
 .features-list__item {
   position: relative;
 }
@@ -105,10 +110,14 @@
     padding: 0;
   }
 
+  .features-list__item:nth-child(2) br,
+  .features-list__item:nth-child(3) br {
+    display: inline;
+  }
+
   .features-list__item {
     padding: 30px;
     text-align: center;
-
     width: 33.3%;
     box-sizing: border-box;
     padding-bottom: 60px;
@@ -135,8 +144,8 @@
 
   .features-list__description {
     padding-top: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 15px;
     padding-bottom: 1px;
   }
 }

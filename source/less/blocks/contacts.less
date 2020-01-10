@@ -1,11 +1,12 @@
 .contacts {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid @dark-grey;
   line-height: 26px;
   padding-bottom: 14px;
 }
 
 .contacts__elements {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -35,16 +36,17 @@
   padding-bottom: 12px;
   padding-left: 19px;
   padding-right: 58px;
+  height: 58px;
   width: 100%;
 
   &:hover {
-    background-color: #e5e5e5;
-    border: 4px solid #e5e5e5;
+    background-color: @dark-grey;
+    border: 4px solid @dark-grey;
   }
 
   &:focus {
     background-color: @white;
-    border: 4px solid #e5e5e5;
+    border: 4px solid @dark-grey;
   }
 }
 
@@ -59,7 +61,6 @@
     right: 0;
     width: 58px;
     height: 58px;
-
     background-color: #e6e6e6;
   }
 }
@@ -84,7 +85,6 @@
     right: 0;
     width: 58px;
     height: 58px;
-
     background-color: #e6e6e6;
   }
 }
@@ -110,7 +110,7 @@
       left: 0;
       width: 125px;
       height: 1px;
-      border-top: 1px solid #dbdbdb;
+      border-top: 1px solid @darker-grey;
     }
 
     &::after {
@@ -120,7 +120,7 @@
       right: 0;
       width: 125px;
       height: 1px;
-      border-top: 1px solid #dbdbdb;
+      border-top: 1px solid @darker-grey;
     }
   }
 
@@ -128,6 +128,8 @@
     text-align: center;
     padding-top: 32px;
     padding-bottom: 25px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 
   .contacts__text-input-element {
@@ -147,7 +149,7 @@
       left: 0;
       width: 280px;
       height: 1px;
-      border-top: 1px solid #dbdbdb;
+      border-top: 1px solid @darker-grey;
     }
 
     &::after {
@@ -157,13 +159,15 @@
       right: 0;
       width: 280px;
       height: 1px;
-      border-top: 1px solid #dbdbdb;
+      border-top: 1px solid @darker-grey;
     }
   }
 
   .contacts__caption {
     padding-top: 30px;
     padding-bottom: 73px;
+    padding-left: 290px;
+    padding-right: 290px;
   }
 
   .contacts__hide-text {
@@ -180,15 +184,14 @@
     padding-right: 17px;
     padding-left: 0;
     padding-top: 8px;
-
     white-space: nowrap;
   }
 
   .contacts__text-input-element {
     flex-direction: row;
 
-    &:first-child {
-      padding-right: 78px;
+    &:nth-child(2n-1) {
+      padding-right: 76px;
     }
   }
 

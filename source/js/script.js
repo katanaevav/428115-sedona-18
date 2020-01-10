@@ -4,6 +4,13 @@ var searchNav = document.querySelector(".main-nav__wrapper");
 var isShowing = false;
 
 searchNav.classList.add("main-nav--hide");
+if (openNavButton.classList.contains("main-nav--hide")) {
+  openNavButton.classList.remove("main-nav--hide");
+}
+
+if (closeNavButton.classList.contains("main-nav--hide")) {
+  closeNavButton.classList.remove("main-nav--hide");
+}
 
 openNavButton.addEventListener("click", function () {
   if (!isShowing) {

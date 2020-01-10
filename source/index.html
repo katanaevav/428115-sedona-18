@@ -17,11 +17,11 @@
 
       <header class="page-header">
         <nav class="main-nav">
-          <button class="main-nav__open-nav" type="button" aria-label="Открыть меню">
+          <button class="main-nav__open-nav main-nav--hide" type="button" aria-label="Открыть меню">
             <svg class="main-nav__open-nav-icon" width="23" height="22"><use xlink:href="#icon-menu"></use></svg>
           </button>
           <div class="main-nav__wrapper">
-            <button class="main-nav__close-nav" type="button" aria-label="Закрыть меню">
+            <button class="main-nav__close-nav main-nav--hide" type="button" aria-label="Закрыть меню">
               <svg class="main-nav__close-nav-icon" width="22" height="22"><use xlink:href="#icon-cross"></use></svg>
             </button>
             <ul class="main-nav__list site-list">
@@ -40,7 +40,7 @@
             </ul>
           </div>
         </nav>
-        <a href="index.html" class="page-header__logo" >
+        <a class="page-header__logo">
           <svg version="1.0" id="page-header__logo-image" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="186.643px" height="96.425px" viewBox="0 0 186.643 96.425" enable-background="new 0 0 186.643 96.425" xml:space="preserve">
             <g>
               <g class="page-header__blue-background">
@@ -319,21 +319,21 @@
               <svg class="features-list__present-icon" height="32" width="38"><use xlink:href="#icon-gift"></use></svg>
             </span>
             <h3 class="features-list__header">Сувениры</h3>
-            <p class="features-list__description">Не только китайского, но и местного производства!</p>
+            <p class="features-list__description">Не только китайского,<br>но и местного производства!</p>
           </li>
           <li class="features-list__item">
             <span class="features-list__burger">
               <svg class="features-list__burger-icon" height="42" width="37"><use xlink:href="#icon-burger"></use></svg>
             </span>
             <h3 class="features-list__header">Еда</h3>
-            <p class="features-list__description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <p class="features-list__description">Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
           </li>
         </ul>
         <article class="reasons reasons--reverse">
           <div class="reasons__item">
-            <h3 class="reasons__header">&nbsp;Там есть мост дьявола</h3>
+            <h3 class="reasons__header">&nbsp;Там есть&nbsp;<br> мост дьявола</h3>
             <p class="reasons__number">&ndash; №2 &ndash;</p>
-            <p class="reasons__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <p class="reasons__description">Да, по нему можно пройти!&nbsp;<br> Если вы осмелитесь, конечно</p>
           </div>
           <div class="reasons__photo">
             <picture>
@@ -355,19 +355,19 @@
           <li class="reasons__item reasons--other">
             <h3 class="reasons__header">Красивая дорога</h3>
             <p class="reasons__number">&ndash; №4 &ndash;</p>
-            <p class="reasons__description">&nbsp; Ехать в Седону из Лас-Вегаса &nbsp; совсем не скучно!</p>
+            <p class="reasons__description">Ехать в Седону из &nbsp;<br> Лас-Вегаса &nbsp;<br> совсем не&nbsp;скучно!</p>
           </li>
           <li class="reasons__item reasons--other">
             <h3 class="reasons__header">Мало туристов</h3>
             <p class="reasons__number">&ndash; №5 &ndash;</p>
-            <p class="reasons__description">&nbsp; Большинство едет в Гранд Каньон &nbsp; и толпится там</p>
+            <p class="reasons__description">Большинство едет в Гранд Каньон &nbsp;<br> и толпится там</p>
           </li>
         </ul>
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <p class="hotel-search__header">Заинтересовались?</p>
-          <p class="hotel-search__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button class="hotel-search__button" type="button">Найти гостиницу</button>
+          <p class="hotel-search__description">Укажите предполагаемые даты поездки,&nbsp;<br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="hotel-search__button" href="search.html">Найти гостиницу</a>
         </section>
         <section class="map">
           <h2 class="visually-hidden">Карта Седоны</h2>
@@ -388,17 +388,17 @@
         <p class="page-footer__hashteg">#visitsedona</p>
         <ul class="page-footer__social social">
           <li class="social__item">
-            <a class="social__link social__link--twitter" href="#">
+            <a class="social__link social__link--twitter" href="#" aria-label="Профиль в twitter">
               <svg class="social__link-icon" width="18" height="15"><use xlink:href="#icon-twitter"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--facebook" href="#">
+            <a class="social__link social__link--facebook" href="#" aria-label="Профиль в facebook">
               <svg class="social__link-icon" width="9" height="19"><use xlink:href="#icon-facebook"></use></svg>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link social__link--youtube" href="#">
+            <a class="social__link social__link--youtube" href="#" aria-label="Профиль в youtube">
               <svg class="social__link-icon" width="20" height="14"><use xlink:href="#icon-youtube"></use></svg>
             </a>
           </li>

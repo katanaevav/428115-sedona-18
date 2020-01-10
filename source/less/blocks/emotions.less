@@ -1,5 +1,5 @@
 .emotions {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid @dark-grey;
   line-height: 26px;
   padding-bottom: 15px;
 }
@@ -16,13 +16,11 @@
   padding: 20px;
   padding-top: 17px;
   min-height: 160px;
-
   font: inherit;
   font-size: 18px;
   font-weight: bold;
   text-transform: none;
   background-color: @lighter-grey;
-
   width: 100%;
   box-sizing: border-box;
   resize: none;
@@ -42,7 +40,7 @@
       left: 0;
       width: 125px;
       height: 1px;
-      border-top: 1px solid #dbdbdb;
+      border-top: 1px solid @darker-grey;
     }
 
     &::after {
@@ -52,7 +50,7 @@
       right: 0;
       width: 125px;
       height: 1px;
-      border-top: 1px solid #dbdbdb;
+      border-top: 1px solid @darker-grey;
     }
   }
 
@@ -60,6 +58,8 @@
     text-align: center;
     padding-top: 31px;
     padding-bottom: 56px;
+    padding-left: 130px;
+    padding-right: 130px;
   }
 }
 
@@ -72,5 +72,10 @@
     &::after {
       width: 280px;
     }
+  }
+
+  .emotions__caption {
+    padding-left: 290px;
+    padding-right: 290px;
   }
 }
