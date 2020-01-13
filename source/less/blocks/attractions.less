@@ -51,6 +51,18 @@
   }
 }
 
+.attractions__checkbox:disabled ~ .attractions__label {
+  color: #cccccc;
+
+  &::before {
+    background-color: #c0c0c0;
+  }
+
+  &::after {
+    opacity: 0.3;
+  }
+}
+
 .attractions__checkbox:checked ~ .attractions__label {
   &::after {
     content: "";

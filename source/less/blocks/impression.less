@@ -49,6 +49,14 @@
   }
 }
 
+.impression__radio:disabled ~ .impression__label {
+  color: #cccccc;
+
+  &::before {
+    background-color: #c0c0c0;
+  }
+}
+
 .impression__radio:checked ~ .impression__label {
   &::after {
     content: "";
